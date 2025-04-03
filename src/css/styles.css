@@ -339,21 +339,21 @@ template {
 
 @font-face {
   font-family: "Rubik";
-  src: url("/src/fonts/Rubik-Regular.woff2") format("woff2");
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("/src/fonts/Rubik-Medium.woff2") format("woff2");
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("/src/fonts/Rubik-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Rubik-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -370,9 +370,10 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 16px;
   font-family: "Rubik";
-  margin: 0;
+  font-weight: 400;
   background-color: #FFFFFF;
 }
 
@@ -389,6 +390,10 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 1s;
+}
+a:hover {
+  color: #F53838;
 }
 
 .container {
@@ -417,6 +422,7 @@ a {
 }
 .header__logo {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   font-family: "Rubik", sans-serif;
@@ -449,16 +455,43 @@ a {
   white-space: nowrap;
   background-color: unset;
   color: #F53838;
+  padding: 8px 22px;
+  border: 2px solid transparent;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  padding: 8px 22px;
+  transition: border 1s, background-color 1s, color 1s;
 }
 .header__button--blank {
   color: #2B2B2B;
 }
+.header__button--blank:hover {
+  border: 2px solid #F53838;
+}
 .header__button--bordered {
   color: #F53838;
   border: 2px solid;
+}
+.header__button--bordered:hover {
+  border: 2px solid transparent;
+  background-color: #F53838;
+  color: #FFFFFF;
+}
+
+.nav-menu__link {
+  position: relative;
+}
+.nav-menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 0%;
+  height: 2px;
+  transition: width 1s;
+  background-color: #F53838;
+}
+.nav-menu__link:hover::after {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
