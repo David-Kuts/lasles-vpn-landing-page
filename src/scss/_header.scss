@@ -1,3 +1,5 @@
+@use "variables";
+
 .header {
     margin-top: 30px;
 
@@ -6,13 +8,14 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        // padding-top: 30px;
     }
 
     &__logo {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
     }
 
     &__nav-menu {
@@ -38,8 +41,26 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    gap: min(15px, 10vw);
+    // background-color: pink; //FOR DEBUGGING
 }
 
-.button {
-    text-wrap: nowrap;
+.header__button {
+    white-space: nowrap;
+    background-color: unset;
+    color: variables.$cl-red;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    padding: 8px 22px;
+
+    &:hover {}
+
+    &--blank {
+        color: variables.$cl-gray;
+    }
+
+    &--bordered {
+        color: variables.$cl-red;
+        border: 2px solid;
+    }
 }
