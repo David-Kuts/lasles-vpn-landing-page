@@ -1,0 +1,17 @@
+@use "variables";
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.button {
+    background-color: variables.$cl-red;
+    color: variables.$cl-white;
+    border-radius: 20px;
+    padding: 16px 45px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
