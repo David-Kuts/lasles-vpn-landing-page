@@ -396,12 +396,14 @@ a {
   padding: 0 15px;
 }
 
+.header {
+  margin-top: 30px;
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 30px;
 }
 .header__logo {
   display: flex;
