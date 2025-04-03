@@ -1,0 +1,43 @@
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__nav-menu {
+        width: 400px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.nav-menu__list {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    text-wrap: nowrap;
+}
