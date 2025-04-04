@@ -55,9 +55,9 @@
     font-family: "Rubik", sans-serif;
     font-weight: 400;
 
-    transition: border variables.$transition,
-        background-color variables.$transition,
-        color variables.$transition;
+    transition: border variables.$transition-time,
+        background-color variables.$transition-time,
+        color variables.$transition-time;
 
     &--blank {
         color: variables.$cl-gray;
@@ -92,7 +92,7 @@
         width: 0%;
         height: 2px;
 
-        transition: width variables.$transition;
+        transition: width variables.$transition-time;
 
         background-color: variables.$cl-red;
     }
