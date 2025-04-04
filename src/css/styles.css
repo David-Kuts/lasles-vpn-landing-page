@@ -377,6 +377,12 @@ body {
   background-color: #FFFFFF;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 ul,
 p {
   margin: 0;
@@ -390,10 +396,7 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 1s;
-}
-a:hover {
-  color: #F53838;
+  transition: color 0.5s;
 }
 
 .container {
@@ -409,6 +412,11 @@ a:hover {
   padding: 16px 45px;
   font-family: "Rubik", sans-serif;
   font-weight: 600;
+  font-size: 18px;
+  transition: opacity 0.5s;
+}
+.button:hover {
+  opacity: 0.7;
 }
 
 .header {
@@ -459,7 +467,7 @@ a:hover {
   border: 2px solid transparent;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  transition: border 1s, background-color 1s, color 1s;
+  transition: border 0.5s, background-color 0.5s, color 0.5s;
 }
 .header__button--blank {
   color: #2B2B2B;
@@ -487,11 +495,36 @@ a:hover {
   top: 16px;
   width: 0%;
   height: 2px;
-  transition: width 1s;
+  transition: width 0.5s;
   background-color: #F53838;
 }
 .nav-menu__link:hover::after {
   width: 100%;
+}
+
+.hero__wrapper {
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-top: 95px;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 550px;
+  flex-shrink: 3;
+}
+.hero__title {
+  font-size: 50px;
+  font-weight: 400;
+}
+.hero__description {
+  margin-top: 40px;
+  margin-bottom: 58px;
+}
+.hero__button {
+  display: inline;
 }
 
 /*# sourceMappingURL=styles.css.map */
