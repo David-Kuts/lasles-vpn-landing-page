@@ -33,6 +33,10 @@ p {
     padding: 0;
 }
 
+p {
+    color: variables.$cl-gray-light;
+}
+
 img {
     max-width: 100%;
 }
