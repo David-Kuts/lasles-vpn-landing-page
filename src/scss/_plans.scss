@@ -1,0 +1,134 @@
+@use "variables";
+@use "mixins";
+
+.plans {
+    margin-top: 75px;
+    // background: #7ebe9a; // FOR DEBUGGING
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        // background: #be7e7e; // FOR DEBUGGING
+    }
+
+    &__text {
+        text-align: center;
+
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    &__top-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+
+    &__description {
+        margin-top: 16px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: min(30px, 2vw);
+
+        max-width: 1000px;
+        margin-top: 50px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        max-width: 315px;
+        height: 800px;
+        padding: 21px min(55px, 4vw);
+
+        @include mixins.custom-border-style;
+
+        &__title {
+            font-size: 20px;
+        }
+
+    }
+
+    &__card-icon {}
+
+    &__feature-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 40px;
+
+        margin-top: 55px;
+        margin-bottom: auto;
+
+        list-style: none;
+    }
+
+    &__feature {
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 16px;
+
+            background-image: url("../svg/check.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__bottom-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 22px;
+
+        margin-top: 30px;
+    }
+
+    &__price- {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        p {
+            font-size: 20px;
+        }
+
+    }
+
+    &__price-value {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    &__button {
+        padding: 10px 55px;
+    }
+}

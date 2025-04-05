@@ -103,3 +103,10 @@
         width: 100%;
     }
 }
+
+.logo__title {
+    p {
+        font-size: 20px;
+        color: variables.$cl-gray;
+    }
+}

@@ -1,4 +1,5 @@
 @use "variables";
+@use "mixins";
 
 .statistics {
     &__wrapper {
@@ -11,9 +12,7 @@
         margin-top: 70px;
         padding: 35px 45px;
 
-        border-radius: 20px;
-
-        box-shadow: 0 15px 40px -10px rgba($color: variables.$cl-gray, $alpha: 0.2);
+        @include mixins.custom-border-style;
     }
 
     &__card {
