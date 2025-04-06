@@ -1,0 +1,56 @@
+.network {
+    margin-top: 90px;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+
+        // background: #be7e7e; // FOR DEBUGGING
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+
+    &__description {
+        margin-top: 16px;
+    }
+
+    &__map {
+        margin-top: 70px;
+    }
+
+    &__companies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: min(50px, 2vw);
+
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 70px;
+
+        &-img {
+            max-width: 170px;
+            object-fit: contain;
+        }
+    }
+
+
+}

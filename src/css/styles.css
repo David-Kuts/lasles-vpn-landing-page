@@ -628,6 +628,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin: 0 auto;
 }
 .plans__text {
@@ -721,6 +722,50 @@ a {
 }
 .plans__button {
   padding: 10px 55px;
+}
+
+.network {
+  margin-top: 90px;
+}
+.network__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.network__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.network__title {
+  font-size: 30px;
+}
+.network__description {
+  margin-top: 16px;
+}
+.network__map {
+  margin-top: 70px;
+}
+.network__companies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: min(50px, 2vw);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.network__companies-img {
+  max-width: 170px;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=styles.css.map */
