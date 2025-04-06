@@ -768,4 +768,127 @@ a {
   object-fit: contain;
 }
 
+.customers {
+  margin-top: 75px;
+}
+.customers__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.customers__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.customers__description {
+  margin-top: 16px;
+}
+.customers__title {
+  max-width: 360px;
+  font-size: 30px;
+}
+.customers__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: min(20px, 2vw);
+  margin-top: 50px;
+}
+.customers__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  padding: 21px 1.5vw;
+  border: 1px solid rgba(100, 100, 100, 0.1);
+  box-shadow: 0 15px 40px -10px rgba(43, 43, 43, 0.2);
+  border-radius: 20px;
+}
+.customers__card__title {
+  font-size: 20px;
+}
+.customers__card:hover {
+  border: 1px solid #F53838;
+  cursor: pointer;
+}
+.customers__top-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: min(28px, 1vw);
+  width: 100%;
+}
+.customers__photo {
+  max-width: 64px;
+  border-radius: 50%;
+}
+.customers__info {
+  max-width: 165px;
+}
+.customers__info p:nth-child(2) {
+  margin-top: 5px;
+}
+.customers__name {
+  font-size: 18px;
+  font-weight: 600px;
+  white-space: nowrap;
+  color: #2B2B2B;
+}
+.customers__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.customers__feedback {
+  margin-top: 20px;
+}
+.customers__card-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.customers__carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.customers__carousel-item {
+  width: 14px;
+  height: 14px;
+  background-color: #D8D8D8;
+  border-radius: 20px;
+}
+.customers__carousel-item:nth-child(1) {
+  width: 58px;
+  background-color: #F53838;
+}
+.customers__carousel-dots {
+  display: flex;
+  flex-direction: row;
+  gap: min(45px, 4vw);
+}
+
+.button--arrow {
+  background-color: transparent;
+  border: 0 solid transparent;
+  padding: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
