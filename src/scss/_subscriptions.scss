@@ -14,6 +14,7 @@
         padding: 35px 45px;
 
         @include mixins.custom-border-style;
+        background-color: variables.$cl-white;
     }
 
     &__card {
