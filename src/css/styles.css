@@ -417,6 +417,7 @@ a {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   font-size: 18px;
+  white-space: nowrap;
   transition: opacity 0.5s;
 }
 .button:hover {
@@ -889,6 +890,42 @@ a {
   background-color: transparent;
   border: 0 solid transparent;
   padding: 0;
+}
+
+.subscription__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 35px 45px;
+  border: 1px solid rgba(100, 100, 100, 0.1);
+  box-shadow: 0 15px 40px -10px rgba(43, 43, 43, 0.2);
+  border-radius: 20px;
+}
+.subscription__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.subscription__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.subscription__card-title {
+  font-size: 25px;
+}
+.subscription__card-description {
+  margin-top: 16px;
+}
+.subscription__cards-divider {
+  height: 46px;
+  width: 1px;
+  background-color: #646464;
 }
 
 /*# sourceMappingURL=styles.css.map */

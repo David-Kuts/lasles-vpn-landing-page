@@ -18,6 +18,8 @@
     font-weight: 600;
     font-size: 18px;
 
+    white-space: nowrap;
+
     transition: opacity variables.$transition-time;
 
     &:hover {
