@@ -1,0 +1,50 @@
+@use "variables";
+@use "mixins";
+
+.subscription {
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 70px;
+        padding: 35px 45px;
+
+        @include mixins.custom-border-style;
+    }
+
+    &__card {
+        // background-color: lightgreen; // FOR DEBUGGING
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            // max-width: 300px;
+        }
+
+        &-title {
+            font-size: 25px;
+        }
+
+        &-description {
+            margin-top: 16px;
+        }
+    }
+
+    &__cards-divider {
+        height: 46px;
+        width: 1px;
+        background-color: variables.$cl-gray-light;
+    }
+}
