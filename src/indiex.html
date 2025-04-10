@@ -2,46 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LaslesVPN</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="description" content="LaslesVPN">
+    <link rel="shortcut icon" href="./svg/logo.svg" type="image/svg">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" aria-label="Header section">
         <div class="container">
             <div class="header__wrapper">
                 <div class="logo">
-                    <a class="logo__link" href=" #"">
-                        <img class=" logo__img" src="svg/logo.svg" alt="logo">
+                    <a class="logo__link" href=" #">
+                        <img class="logo__img" src="svg/logo.svg" alt="Company logo" />
                     </a>
-                    <a href="#" class="logo__title">
-                        <p class="">Lasles<strong>VPN</strong></p>
+                    <a class="logo__title" href="#">
+                        <p aria-label="Company name">Lasles<strong>VPN</strong></p>
                     </a>
                 </div>
 
-                <nav class="header__nav-menu">
+                <nav class="header__nav-menu" aria-label="Navigation menu">
                     <ul class="nav-menu__list">
                         <li class="nav-menu__item">
-                            <a href="" class="nav-menu__link">Features</a>
+                            <a class="nav-menu__link" href="" aria-label="Features">Features</a>
                         </li>
                         <li class="nav-menu__item">
-                            <a href="" class="nav-menu__link">Pricing</a>
+                            <a class="nav-menu__link" href="" aria-label="Pricing">Pricing</a>
                         </li>
                         <li class="nav-menu__item">
-                            <a href="" class="nav-menu__link">Testimonial</a>
+                            <a class="nav-menu__link" href="" aria-label="Testimonial">Testimonial</a>
                         </li>
                         <li class="nav-menu__item">
-                            <a href="" class="nav-menu__link">Help</a>
+                            <a class="nav-menu__link" href="" aria-label="Help">Help</a>
                         </li>
                     </ul>
                 </nav>
 
                 <div class="header__buttons">
-                    <a href="" class="button header__button header__button--blank">Sign in</a>
-                    <a href="" class="button  header__button header__button--bordered">Sign up</a>
+                    <a
+                        href=""
+                        class="button header__button header__button--blank"
+                        aria-label="Sign in button">Sign in</a>
+                    <a
+                        href=""
+                        class="button header__button header__button--bordered"
+                        aria-label="Sign up button">Sign up</a>
                 </div>
             </div>
         </div>
@@ -50,33 +58,44 @@
     <!-- Main -->
     <main class="main">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-label="Hero section">
             <div class="container">
                 <div class="hero__wrapper">
                     <div class="hero__text">
-                        <h1 class="hero__title">
+                        <h1 class="hero__title" aria-label="Title">
                             Want anything to be easy with <strong>LaslesVPN</strong>
                         </h1>
-                        <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                            voluptatibus atque ullam eos vitae exercitationem mollitia voluptas. Minus, nesciunt
-                            tempore!
+                        <p class="hero__description" aria-label="Description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                            voluptatibus atque ullam eos vitae exercitationem mollitia
+                            voluptas. Minus, nesciunt tempore!
                         </p>
-                        <a href="" class="button hero__button">Get started</a>
+                        <a
+                            href=""
+                            class="button hero__button"
+                            aria-label="Button - Get started">Get started</a>
                     </div>
                     <div class="hero__imm">
-                        <img src="images/hero-img.webp" alt="">
+                        <img
+                            src="images/hero-img.webp"
+                            alt="Illustration of a person sitting at work space" />
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Statistics Section -->
-        <section class="statistics">
+        <section class="statistics" aria-label="Statistics section">
             <div class="container">
                 <div class="statistics__wrapper">
-                    <div class="statistics__card">
-                        <img src="svg/user.svg" alt="" class="statistics__img">
-                        <div class="statistics__card-text">
+                    <div class="statistics__card" aria-label="Statistic card">
+                        <img
+                            class="statistics__img"
+                            src="svg/user.svg"
+                            alt="Icon of a user" />
+                        <div
+                            class="statistics__card-text"
+                            aria-label="Card info - Ussers">
                             <h2 class="statistics__card-title">90+</h2>
                             <p class="statistics__card-description">User</p>
                         </div>
@@ -84,9 +103,14 @@
 
                     <div class="statistics__cards-divider"></div>
 
-                    <div class="statistics__card">
-                        <img src="svg/location.svg" alt="" class="statistics__img">
-                        <div class="statistics__card-text">
+                    <div class="statistics__card" aria-label="Statistic card">
+                        <img
+                            class="statistics__img"
+                            src="svg/location.svg"
+                            alt="Location icon" />
+                        <div
+                            class="statistics__card-text"
+                            aria-label="Card info - Lacation">
                             <h2 class="statistics__card-title">30+</h2>
                             <p class="statistics__card-description">Locations</p>
                         </div>
@@ -94,9 +118,14 @@
 
                     <div class="statistics__cards-divider"></div>
 
-                    <div class="statistics__card">
-                        <img src="svg/severs.svg" alt="" class="statistics__img">
-                        <div class="statistics__card-text">
+                    <div class="statistics__card" aria-label="Statistic card">
+                        <img
+                            class="statistics__img"
+                            src="svg/severs.svg"
+                            alt="Icon of a server" />
+                        <div
+                            class="statistics__card-text"
+                            aria-label="Card info - Servers">
                             <h2 class="statistics__card-title">50+</h2>
                             <p class="statistics__card-description">Servers</p>
                         </div>
@@ -106,22 +135,27 @@
         </section>
 
         <!-- Features Section -->
-        <section class="features">
+        <section class="features" aria-label="Features section">
             <div class="container">
                 <div class="features__wrapper">
-                    <div class="features__imm">
-                        <img src="images/features-img.webp" alt="">
+                    <div class="features__img">
+                        <img
+                            src="images/features-img.webp"
+                            alt="Illustration of features" />
                     </div>
 
                     <div class="features__text">
-                        <h2 class="features__title">
+                        <h2 class="features__title" aria-label="Features title">
                             We provide many features you can use
                         </h2>
-                        <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                            voluptatibus atque ullam eos vitae exercitationem mollitia voluptas. Minus, nesciunt
-                            tempore!
+                        <p
+                            class="features__description"
+                            aria-label="Features desctiption">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                            voluptatibus atque ullam eos vitae exercitationem mollitia
+                            voluptas. Minus, nesciunt tempore!
                         </p>
-                        <ul class="features__list">
+                        <ul class="features__list" aria-label="Features list">
                             <li class="features__item">Powerful online protection.</li>
                             <li class="features__item">Internet with borders</li>
                             <li class="features__item">Supercharged VPN</li>
@@ -133,43 +167,61 @@
         </section>
 
         <!-- Plans Sections -->
-        <section class="plans">
+        <section class="plans" aria-label="Plans section">
             <div class="container">
                 <div class="plans__wrapper">
                     <div class="plans__text">
-                        <h2 class="plans__title">Choose your plan</h2>
-                        <p class="plans__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                            consequatur vero odit fugit saepe explicabo impedit distinctio deleniti accusamus quos.</p>
+                        <h2 class="plans__title" aria-label="Plans - title">
+                            Choose your plan
+                        </h2>
+                        <p class="plans__description" aria-label="Plans description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            consequatur vero odit fugit saepe explicabo impedit distinctio
+                            deleniti accusamus quos.
+                        </p>
                     </div>
 
                     <div class="plans__cards">
-                        <div class="plans__card">
+                        <div class="plans__card" aria-label="Plan card - Free">
                             <div class="plans__top-block">
-                                <img class="plans__card-icon" src="images/opened-box.webp" alt="">
+                                <img
+                                    class="plans__card-icon"
+                                    src="images/opened-box.webp"
+                                    alt="Illustration of a opened box" />
                                 <h3 class="plans__card-title">Free</h3>
                             </div>
 
-                            <ul class="plans__feature-list">
+                            <ul
+                                class="plans__feature-list"
+                                aria-label="Plans features list">
                                 <li class="plans__feature">Unlimited brandwatch</li>
                                 <li class="plans__feature">Encrypted connection</li>
                                 <li class="plans__feature">Yes traffic logs</li>
                             </ul>
 
                             <div class="plans__bottom-block">
-                                <div class="plans__price-">
+                                <div class="plans__price">
                                     <span class="plans__price-value">Free</span>
                                 </div>
-                                <a href="" class="button plans__button">Select</a>
+                                <a
+                                    href=""
+                                    class="button plans__button"
+                                    aria-label="Button - Select">Select</a>
                             </div>
                         </div>
 
-                        <div class="plans__card">
+                        <div class="plans__card" aria-label="Plan card - Standard plan">
                             <div class="plans__top-block">
-                                <img class="plans__card-icon" src="images/opened-box.webp" alt="">
+                                <img
+                                    class="plans__card-icon"
+                                    src="images/opened-box.webp"
+                                    alt="Illustration of a opened box" />
                                 <h3 class="plans__card-title">Standard plan</h3>
                             </div>
 
-                            <ul class="plans__feature-list">
+                            <ul
+                                class="plans__feature-list"
+                                aria-label="Plans features list">
                                 <li class="plans__feature">Unlimited brandwatch</li>
                                 <li class="plans__feature">Encrypted connection</li>
                                 <li class="plans__feature">Yes traffic logs</li>
@@ -182,17 +234,25 @@
                                     <span class="plans__price-value">$9/</span>
                                     <p>mo</p>
                                 </div>
-                                <a href="" class="button plans__button">Select</a>
+                                <a
+                                    href=""
+                                    class="button plans__button"
+                                    aria-label="Button - Select">Select"</a>
                             </div>
                         </div>
 
-                        <div class="plans__card">
+                        <div class="plans__card" aria-label="Plan card - Premium plan">
                             <div class="plans__top-block">
-                                <img class="plans__card-icon" src="images/opened-box.webp" alt="">
+                                <img
+                                    class="plans__card-icon"
+                                    src="images/opened-box.webp"
+                                    alt="Illustration of a opened box" />
                                 <h3 class="plans__card-title">Premium plan</h3>
                             </div>
 
-                            <ul class="plans__feature-list">
+                            <ul
+                                class="plans__feature-list"
+                                aria-label="Plans features list">
                                 <li class="plans__feature">Unlimited brandwatch</li>
                                 <li class="plans__feature">Encrypted connection</li>
                                 <li class="plans__feature">Yes traffic logs</li>
@@ -206,103 +266,143 @@
                                     <span class="plans__price-value">$12/</span>
                                     <p>mo</p>
                                 </div>
-                                <a href="" class="button plans__button">Select</a>
+                                <a
+                                    href=""
+                                    class="button plans__button"
+                                    aria-label="Button - Select">Select</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Network Section -->
         <section class="network">
             <div class="container">
                 <div class="network__wrapper">
-
                     <div class="network__text">
                         <h2 class="network__title">Huge global network of fast VPN</h2>
-                        <p class="network__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                            consequatur vero odit fugit saepe explicabo impedit distinctio deleniti accusamus quos.</p>
+                        <p class="network__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            consequatur vero odit fugit saepe explicabo impedit distinctio
+                            deleniti accusamus quos.
+                        </p>
                     </div>
 
                     <div class="network__map">
-                        <img src="images/network-map.webp" alt="" class="">
+                        <img
+                            src="images/network-map.webp"
+                            alt="Illustration of a network map" />
                     </div>
 
                     <div class="network__companies">
-                        <img class="network__companies-img" src="svg/netflix.svg" alt="">
-                        <img class="network__companies-img" src="svg/reddit.svg" alt="">
-                        <img class="network__companies-img" src="svg/amazon.svg" alt="">
-                        <img class="network__companies-img" src="svg/discord.svg" alt="">
-                        <img class="network__companies-img" src="svg/spotify.svg" alt="">
+                        <img
+                            class="network__companies-img"
+                            src="svg/netflix.svg"
+                            alt="Netflix icon" />
+                        <img
+                            class="network__companies-img"
+                            src="svg/reddit.svg"
+                            alt="Reddit icon" />
+                        <img
+                            class="network__companies-img"
+                            src="svg/amazon.svg"
+                            alt="Amazon icon" />
+                        <img
+                            class="network__companies-img"
+                            src="svg/discord.svg"
+                            alt="Discord icon" />
+                        <img
+                            class="network__companies-img"
+                            src="svg/spotify.svg"
+                            alt="Spotify icon" />
                     </div>
-
                 </div>
             </div>
         </section>
 
         <!-- Customers -->
-        <section class="customers">
+        <section class="customers" aria-label="Customers section">
             <div class="container">
                 <div class="customers__wrapper">
                     <div class="customers__text">
-                        <h2 class="customers__title">Trusted by thousands of happy customers</h2>
-                        <p class="customers__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Officia
-                            consequatur vero odit fugit saepe explicabo impedit distinctio.</p>
+                        <h2 class="customers__title" aria-label="Title">
+                            Trusted by thousands of happy customers
+                        </h2>
+                        <p class="customers__description" aria-label="Description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            consequatur vero odit fugit saepe explicabo impedit distinctio.
+                        </p>
                     </div>
 
-                    <div class="customers__cards">
-                        <div class="customers__card">
+                    <div class="customers__cards" aria-label="Customers cards">
+                        <div class="customers__card" aria-label="Customers card">
                             <div class="customers__top-block">
-                                <img class="customers__photo" src="images/person-1.webp" alt="">
+                                <img
+                                    class="customers__photo"
+                                    src="images/person-1.webp"
+                                    alt="Customer photo" />
                                 <div class="customers__info">
                                     <p class="customers__name"><b>Brooklyn Simmons</b></p>
-                                    <p class="customers__country"> Warsaw, Poland</p>
+                                    <p class="customers__country">Warsaw, Poland</p>
                                 </div>
                                 <div class="customers__rating">
-                                    <img src="svg/star.svg" alt="">
+                                    <img src="svg/star.svg" alt="Star icon" />
                                     <p class="customers__rating-value">4.5</p>
                                 </div>
                             </div>
 
-                            <p class="customers__feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                                rem beatae ipsum hic quos molestiae impedit in, distinctio a enim.</p>
+                            <p class="customers__feedback">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                rem beatae ipsum hic quos molestiae impedit in, distinctio a
+                                enim.
+                            </p>
                         </div>
 
-                        <div class="customers__card">
+                        <div class="customers__card" aria-label="Customers card">
                             <div class="customers__top-block">
-                                <img class="customers__photo" src="images/person-2.webp" alt="">
+                                <img
+                                    class="customers__photo"
+                                    src="images/person-2.webp"
+                                    alt="Customer photo" />
                                 <div class="customers__info">
                                     <p class="customers__name"><b>Brooklyn Simmons</b></p>
-                                    <p class="customers__country"> Warsaw, Poland</p>
+                                    <p class="customers__country">Warsaw, Poland</p>
                                 </div>
                                 <div class="customers__rating">
-                                    <img src="svg/star.svg" alt="">
+                                    <img src="svg/star.svg" alt="Star icon" />
                                     <p class="customers__rating-value">4.8</p>
                                 </div>
                             </div>
 
-                            <p class="customers__feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                                rem beatae ipsum hic quos molestiae impedit in, distinctio a enim.</p>
+                            <p class="customers__feedback">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                rem beatae ipsum hic quos molestiae impedit in, distinctio a
+                                enim.
+                            </p>
                         </div>
 
-                        <div class="customers__card">
+                        <div class="customers__card" aria-label="Customers card">
                             <div class="customers__top-block">
-                                <img class="customers__photo" src="images/person-3.webp" alt="">
+                                <img
+                                    class="customers__photo"
+                                    src="images/person-3.webp"
+                                    alt="Customer photo" />
                                 <div class="customers__info">
                                     <p class="customers__name"><b>Brooklyn Simmons</b></p>
-                                    <p class="customers__country"> Warsaw, Poland</p>
+                                    <p class="customers__country">Warsaw, Poland</p>
                                 </div>
                                 <div class="customers__rating">
-                                    <img src="svg/star.svg" alt="">
+                                    <img src="svg/star.svg" alt="Star icon" />
                                     <p class="customers__rating-value">4.7</p>
                                 </div>
                             </div>
 
-                            <p class="customers__feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                                rem beatae ipsum hic quos molestiae impedit in, distinctio a enim.</p>
+                            <p class="customers__feedback">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                rem beatae ipsum hic quos molestiae impedit in, distinctio a
+                                enim.
+                            </p>
                         </div>
                     </div>
 
@@ -314,11 +414,12 @@
                             <div class="customers__carousel-item"></div>
                         </div>
                         <div class="customers__carousel-dots">
-                            <button class="button button--arrow">
-                                <img src="svg/backword-arrow.svg" alt="">
+                            <button
+                                class="button button--arrow" aria-label="Button - Previous">
+                                <img src="svg/backward-arrow.svg" alt="Backward-arrow" />
                             </button>
-                            <button class=" button button--arrow">
-                                <img src="svg/forword-arrow.svg" alt="">
+                            <button class="button button--arrow" aria-label="Button - Next">
+                                <img src="svg/forward-arrow.svg" alt="Forward-arrow" />
                             </button>
                         </div>
                     </div>
@@ -332,8 +433,12 @@
                 <div class="subscription__wrapper">
                     <div class="subscription__card">
                         <div class="subscription__card-text">
-                            <h2 class="subscription__card-title">Subscribe now to get special features</h2>
-                            <p class="subscription__card-description">Lorem ipsum dolor sit amet.</p>
+                            <h2 class="subscription__card-title">
+                                Subscribe now to get special features
+                            </h2>
+                            <p class="subscription__card-description">
+                                Lorem ipsum dolor sit amet.
+                            </p>
                         </div>
                     </div>
                     <a href="" class="button"> Subscribe now</a>
@@ -349,26 +454,26 @@
                 <div class="footer__compony-info">
                     <div class="logo">
                         <a class="logo__link" href="#">
-                            <img class="logo__img" src="svg/logo.svg" alt="logo">
+                            <img class="logo__img" src="svg/logo.svg" alt="logo" />
                         </a>
                         <a href="#" class="logo__title">
-                            <p class="">Lasles<strong>VPN</strong></p>
+                            <p>Lasles<strong>VPN</strong></p>
                         </a>
                     </div>
 
                     <p class="footer__company-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam nam omnis accusantium
-                        incidunt reprehenderit?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                        laboriosam nam omnis accusantium incidunt reprehenderit?
                     </p>
                     <div class="footer__sotials">
-                        <a class="footer__sotials-item" href="" ">
-                            <img src=" svg/facebook.svg" alt="">
+                        <a class="footer__sotials-item" href="">
+                            <img src=" svg/facebook.svg" alt="Facebook icon" />
                         </a>
-                        <a class=" footer__sotials-item" href="" ">
-                            <img src=" svg/whatsapp.svg" alt="">
+                        <a class="footer__sotials-item" href="">
+                            <img src=" svg/whatsapp.svg" alt="Whatsupp icon" />
                         </a>
-                        <a class=" footer__sotials-item" href="" ">
-                            <img src=" svg/youtube.svg" alt="">
+                        <a class="footer__sotials-item" href="">
+                            <img src=" svg/youtube.svg" alt="Youtube icon" />
                         </a>
                     </div>
                 </div>
@@ -377,39 +482,64 @@
                     <div class="footer__column">
                         <h3 class="footer__title">Product</h3>
                         <ul class="footer__list">
-                            <li><a href="#" class="footer__link nav-menu__link">Download</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Pricing</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Locations</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Server</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Countries</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Blog</a></li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Download</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Locations</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Server</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Countries</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Blog</a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="footer__column">
                         <h3 class="footer__title">Engage</h3>
                         <ul class="footer__list">
-                            <li><a href="#" class="footer__link nav-menu__link">LaslesVPN?</a></li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">LaslesVPN?</a>
+                            </li>
                             <li><a href="#" class="footer__link nav-menu__link">FAQ</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Tutorials</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">About us</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Privacy policy</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Terms of service</a></li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Tutorials</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">About us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Terms of service</a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="footer__column">
                         <h3 class="footer__title">Earn money</h3>
                         <ul class="footer__list">
-                            <li><a href="#" class="footer__link nav-menu__link">Become partner</a></li>
-                            <li><a href="#" class="footer__link nav-menu__link">Affiliate</a></li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Become partner</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link nav-menu__link">Affiliate</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
