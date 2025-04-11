@@ -27,7 +27,7 @@
 
     }
 
-    &__compony-info {
+    &__brand {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -36,7 +36,7 @@
         max-width: 335px;
     }
 
-    &__company-description {
+    &__description {
         margin-top: 25px;
         margin-bottom: 30px;
     }
@@ -50,7 +50,7 @@
         width: 485px;
     }
 
-    &__sotials {
+    &__socials {
         display: flex;
         justify-content: start;
         align-items: center;
@@ -67,5 +67,18 @@
         margin-top: 20px;
 
         list-style: none;
+    }
+
+    &__link {
+        color: variables.$cl-gray;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+
+        transition: color variables.$transition-time;
+
+        &:hover {
+            color: variables.$cl-red;
+        }
     }
 }

@@ -2,7 +2,6 @@
     margin-top: 90px;
 
     &__wrapper {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -13,7 +12,7 @@
         // background: #be7e7e; // FOR DEBUGGING
     }
 
-    &__text {
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -38,7 +37,7 @@
     &__companies {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: min(50px, 2vw);
 
@@ -46,11 +45,12 @@
         margin: 0 auto;
         margin-top: 70px;
 
-        &-img {
-            max-width: 170px;
-            object-fit: contain;
-        }
+        overflow: hidden;
     }
 
+    &__company-logo {
+        max-width: 170px;
+        object-fit: contain;
+    }
 
 }

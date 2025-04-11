@@ -16,7 +16,7 @@
         // background: #be7e7e; // FOR DEBUGGING
     }
 
-    &__text {
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,13 +27,13 @@
         margin: 0 auto;
     }
 
-    &__description {
-        margin-top: 16px;
-    }
-
     &__title {
         max-width: 360px;
         font-size: 30px;
+    }
+
+    &__description {
+        margin-top: 16px;
     }
 
     &__cards {
@@ -111,7 +111,7 @@
         margin-top: 20px;
     }
 
-    &__card-navigation {
+    &__navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -147,12 +147,12 @@
             gap: min(45px, 4vw);
         }
     }
-
-
 }
 
 .button--arrow {
     background-color: transparent;
     border: 0 solid transparent;
+    padding: 0;
+    margin: 0;
     padding: 0;
 }
