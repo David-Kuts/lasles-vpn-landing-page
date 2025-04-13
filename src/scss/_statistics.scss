@@ -32,9 +32,38 @@
         }
     }
 
-    &__cards-divider {
+    &__content {
+        text-align: center;
+        margin-top: 5px;
+
+    }
+
+    &__label {
+        margin-top: 5px;
+    }
+
+    &__divider {
         height: 46px;
         width: 1px;
         background-color: variables.$cl-gray-light;
+    }
+}
+
+@media (max-width: 784px) {
+    .statistics {
+        &__wrapper {
+            margin-top: 30px;
+            padding: 15px 0;
+
+        }
+
+        &__card {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &__divider {
+            height: 60px;
+        }
     }
 }
