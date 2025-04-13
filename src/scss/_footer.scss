@@ -47,7 +47,7 @@
         justify-content: space-between;
         align-items: start;
 
-        width: 485px;
+        max-width: 485px;
     }
 
     &__socials {
@@ -79,6 +79,53 @@
 
         &:hover {
             color: variables.$cl-red;
+        }
+    }
+}
+
+@media (max-width: 784px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__list {
+            text-align: center;
+            align-items: center;
+        }
+
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 30px;
+        }
+
+        &__heading {
+            font-size: 24px;
+        }
+
+        &__links {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+
+            // margin: 0 auto;
+        }
+
+        &__brand {
+            margin: 0 auto;
+            margin-top: 50px;
+
+            align-items: center;
+        }
+
+        &__description {
+            text-align: center;
         }
     }
 }
