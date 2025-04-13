@@ -54,6 +54,18 @@
         justify-content: end;
         align-items: center;
         gap: 15px;
-        // margin: 0 auto;
+    }
+}
+
+@media (max-width: 784px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        &__auth-buttons {
+            display: none;
+
+        }
     }
 }
