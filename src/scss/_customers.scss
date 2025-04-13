@@ -16,24 +16,20 @@
         // background: #be7e7e; // FOR DEBUGGING
     }
 
-    &__text {
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         text-align: center;
-
-        max-width: 560px;
-        margin: 0 auto;
-    }
-
-    &__description {
-        margin-top: 16px;
     }
 
     &__title {
         max-width: 360px;
         font-size: 30px;
+    }
+
+    &__description {
+        margin-top: 16px;
     }
 
     &__cards {
@@ -47,19 +43,35 @@
         margin-top: 50px;
     }
 
+    &__cards-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
     &__card {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
-        max-width: 400px;
-        padding: 21px 1.5vw;
+        max-width: 340px;
+        flex-shrink: 0;
+        padding: 20px 20px;
 
         @include mixins.custom-border-style;
 
         &__title {
             font-size: 20px;
+        }
+
+        &-navigation {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: 25px;
         }
 
         &:hover {
@@ -77,6 +89,10 @@
 
         width: 100%;
 
+    }
+
+    &__feedback {
+        width: 100%;
     }
 
     &__photo {
@@ -109,9 +125,14 @@
 
     &__feedback {
         margin-top: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        /* число строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
-    &__card-navigation {
+    &__navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -147,12 +168,14 @@
             gap: min(45px, 4vw);
         }
     }
-
-
 }
 
 .button--arrow {
     background-color: transparent;
     border: 0 solid transparent;
     padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
+@media (max-width: 784px) {}

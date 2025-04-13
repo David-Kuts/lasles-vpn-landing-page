@@ -2,7 +2,6 @@
     margin-top: 90px;
 
     &__wrapper {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -13,7 +12,7 @@
         // background: #be7e7e; // FOR DEBUGGING
     }
 
-    &__text {
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -38,19 +37,37 @@
     &__companies {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: min(50px, 2vw);
+        gap: 50px;
 
         width: 100%;
         margin: 0 auto;
         margin-top: 70px;
 
-        &-img {
-            max-width: 170px;
-            object-fit: contain;
+        &-container {
+            width: 100%;
+            overflow: hidden;
         }
     }
 
+    &__company-logo {
+        max-width: 170px;
+        object-fit: contain;
+    }
 
+}
+
+@media (max-width: 784px) {
+    .network {
+        margin-top: 30px;
+
+        &__companies {
+            gap: 30px;
+
+            &-container {
+                overflow: hidden;
+            }
+        }
+    }
 }

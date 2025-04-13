@@ -11,85 +11,61 @@
         margin: 0 auto;
     }
 
-    &__nav-menu {
+    &__nav {
         width: 400px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 30px;
+
+        &-list {
+            list-style: none;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: min(15px, 10vw);
+        }
+
+        &-link {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 16px;
+                width: 0%;
+                height: 2px;
+
+                transition: width variables.$transition-time;
+
+                background-color: variables.$cl-red;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
     }
 
-    &__buttons {
+    &__auth-buttons {
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
         gap: 15px;
     }
 }
 
-.nav-menu__list {
-    list-style: none;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: min(15px, 10vw);
-}
-
-.header__button {
-    white-space: nowrap;
-    background-color: unset;
-    color: variables.$cl-red;
-    padding: 8px 22px;
-    border: 2px solid transparent;
-
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-
-    transition: border variables.$transition-time,
-        background-color variables.$transition-time,
-        color variables.$transition-time;
-
-    &--blank {
-        color: variables.$cl-gray;
-
-        &:hover {
-            border: 2px solid variables.$cl-red;
-            opacity: 1;
+@media (max-width: 784px) {
+    .header {
+        &__nav {
+            display: none;
         }
 
-    }
+        &__auth-buttons {
+            display: none;
 
-    &--bordered {
-        color: variables.$cl-red;
-        border: 2px solid;
-
-        &:hover {
-            border: 2px solid transparent;
-            background-color: variables.$cl-red;
-            color: variables.$cl-white;
         }
-    }
-
-}
-
-.nav-menu__link {
-    position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 16px;
-        width: 0%;
-        height: 2px;
-
-        transition: width variables.$transition-time;
-
-        background-color: variables.$cl-red;
-    }
-
-    &:hover::after {
-        width: 100%;
     }
 }
