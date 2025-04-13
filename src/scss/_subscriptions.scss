@@ -44,3 +44,27 @@
         margin-top: 16px;
     }
 }
+
+@media (max-width: 784px) {
+    .subscription {
+        &__wrapper {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        &__content {
+            align-items: center;
+            text-align: center;
+        }
+
+        &__description {
+            margin-bottom: 40px;
+        }
+
+        &__button {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
