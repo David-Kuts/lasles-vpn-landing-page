@@ -1120,7 +1120,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-  max-width: 485px;
+  gap: 90px;
 }
 .footer__socials {
   display: flex;
@@ -1171,6 +1171,7 @@ a {
     flex-wrap: wrap;
     justify-content: start;
     align-items: center;
+    gap: 30px;
   }
   .footer__brand {
     margin: 0 auto;
