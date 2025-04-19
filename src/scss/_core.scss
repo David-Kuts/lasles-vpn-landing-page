@@ -1,24 +1,24 @@
 @use "variables";
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: inherit;
-    color: variables.$cl-gray;
+  box-sizing: inherit;
+  color: variables.$cl-gray;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 
-    font-size: 16px;
-    font-family: "Rubik";
-    font-weight: 400;
+  font-size: 16px;
+  font-family: "Rubik";
+  font-weight: 400;
 
-    background-color: variables.$cl-white;
+  background-color: variables.$cl-white;
 }
 
 h1,
@@ -29,22 +29,21 @@ h5,
 h6,
 ul,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    color: variables.$cl-gray-light;
+  color: variables.$cl-gray-light;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 
-    transition: color variables.$transition-time;
-
+  transition: color variables.$transition-time;
 }
