@@ -367,7 +367,7 @@ html {
 ::after,
 ::before {
   box-sizing: inherit;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 body {
@@ -375,7 +375,7 @@ body {
   font-size: 16px;
   font-family: "Rubik";
   font-weight: 400;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 h1,
@@ -423,8 +423,8 @@ a {
 }
 
 .button {
-  background-color: #F53838;
-  color: #FFFFFF;
+  background-color: #f53838;
+  color: #ffffff;
   border-radius: 20px;
   padding: 16px 45px;
   font-family: "Rubik", sans-serif;
@@ -440,11 +440,11 @@ a {
   background-color: unset;
   border: 2px solid transparent;
   padding: 8px 22px;
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-weight: 400;
 }
 .button--text:hover {
-  border: 2px solid #F53838;
+  border: 2px solid #f53838;
   opacity: 1;
 }
 .button--outline {
@@ -455,8 +455,8 @@ a {
 }
 .button--outline:hover {
   border: 2px solid transparent;
-  background-color: #F53838;
-  color: #FFFFFF;
+  background-color: #f53838;
+  color: #ffffff;
 }
 
 .logo {
@@ -472,7 +472,7 @@ a {
 }
 .logo__text {
   font-size: 20px;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 .burger {
@@ -530,7 +530,7 @@ a {
   width: 0%;
   height: 2px;
   transition: width 0.5s;
-  background-color: #F53838;
+  background-color: #f53838;
 }
 .header__nav-link:hover::after {
   width: 100%;
@@ -785,7 +785,7 @@ a {
   left: 0;
   width: 16px;
   height: 16px;
-  background-image: url("../svg/check.svg");
+  background-image: url("../src/svg/check.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -911,7 +911,13 @@ a {
 .customers__description {
   margin-top: 16px;
 }
-.customers__cards {
+.customers__cards-container {
+  width: 100%;
+  overflow: hidden;
+}
+.customers__card-slider {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -919,10 +925,7 @@ a {
   align-items: center;
   gap: min(20px, 2vw);
   margin-top: 50px;
-}
-.customers__cards-container {
-  width: 100%;
-  overflow: hidden;
+  padding-bottom: 40px;
 }
 .customers__card {
   display: flex;
@@ -935,6 +938,7 @@ a {
   border: 1px solid rgba(100, 100, 100, 0.1);
   box-shadow: 0 15px 40px -10px rgba(43, 43, 43, 0.2);
   border-radius: 20px;
+  z-index: 2;
 }
 .customers__card__title {
   font-size: 20px;
@@ -945,10 +949,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 5px;
+  z-index: 1;
 }
 .customers__card:hover {
-  border: 1px solid #F53838;
+  border: 1px solid #f53838;
   cursor: pointer;
 }
 .customers__top-block {
@@ -976,7 +981,7 @@ a {
   font-size: 18px;
   font-weight: 600px;
   white-space: nowrap;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 .customers__rating {
   display: flex;
@@ -1010,12 +1015,12 @@ a {
 .customers__carousel-item {
   width: 14px;
   height: 14px;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   border-radius: 20px;
 }
 .customers__carousel-item:nth-child(1) {
   width: 58px;
-  background-color: #F53838;
+  background-color: #f53838;
 }
 .customers__carousel-dots {
   display: flex;
@@ -1043,7 +1048,7 @@ a {
   border: 1px solid rgba(100, 100, 100, 0.1);
   box-shadow: 0 15px 40px -10px rgba(43, 43, 43, 0.2);
   border-radius: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .subscription__content {
   display: flex;
@@ -1084,7 +1089,7 @@ a {
 }
 .footer {
   position: relative;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 .footer::before {
   content: "";
@@ -1093,7 +1098,7 @@ a {
   top: -60px;
   height: 60px;
   width: 100%;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   z-index: -1;
 }
 .footer__wrapper {
@@ -1138,14 +1143,14 @@ a {
   list-style: none;
 }
 .footer__link {
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.5s;
 }
 .footer__link:hover {
-  color: #F53838;
+  color: #f53838;
 }
 
 @media (max-width: 784px) {

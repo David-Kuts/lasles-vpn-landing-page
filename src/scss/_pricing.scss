@@ -2,158 +2,156 @@
 @use "mixins";
 
 .pricing {
-    margin-top: 75px;
-    // background: #7ebe9a; // FOR DEBUGGING
+  margin-top: 75px;
+  // background: #7ebe9a; // FOR DEBUGGING
 
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 
-        // background: #be7e7e; // FOR DEBUGGING
+    // background: #be7e7e; // FOR DEBUGGING
+  }
+
+  &__top-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__title {
+    text-align: center;
+
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 30px;
+  }
+
+  &__description {
+    margin-top: 16px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: min(30px, 2vw);
+
+    max-width: 1000px;
+    margin-top: 50px;
+
+    &-container {
+      width: 100%;
+      overflow-x: hidden;
+      padding-bottom: 40px;
     }
+  }
 
-    &__top-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 40px;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    max-width: 315px;
+    height: 800px;
+    padding: 40px min(55px, 4vw);
+
+    @include mixins.custom-border-style;
+
+    &-title {
+      font-size: 24px;
     }
+  }
 
-    &__title {
-        text-align: center;
+  &__features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 40px;
 
-        max-width: 560px;
-        margin: 0 auto;
-        font-size: 30px;
+    margin-top: 55px;
+    margin-bottom: auto;
+    white-space: nowrap;
+
+    list-style: none;
+  }
+
+  &__feature {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+
+      background-image: url("../src/svg/check.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
     }
+  }
 
-    &__description {
-        margin-top: 16px;
+  &__bottom-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+
+    margin-top: 30px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    p {
+      font-size: 20px;
     }
+  }
 
-    &__cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: min(30px, 2vw);
+  &__value {
+    font-size: 28px;
+    font-weight: 600;
+  }
 
-        max-width: 1000px;
-        margin-top: 50px;
-
-        &-container {
-            width: 100%;
-            overflow-x: hidden;
-            padding-bottom: 40px;
-        }
-    }
-
-    &__card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-shrink: 0;
-
-        max-width: 315px;
-        height: 800px;
-        padding: 40px min(55px, 4vw);
-
-        @include mixins.custom-border-style;
-
-        &-title {
-            font-size: 24px;
-        }
-
-    }
-
-    &__features {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        gap: 40px;
-
-        margin-top: 55px;
-        margin-bottom: auto;
-        white-space: nowrap;
-
-        list-style: none;
-    }
-
-    &__feature {
-        position: relative;
-        padding-left: 30px;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 16px;
-            height: 16px;
-
-            background-image: url("../svg/check.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    }
-
-    &__bottom-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 22px;
-
-        margin-top: 30px;
-    }
-
-    &__price {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-
-        p {
-            font-size: 20px;
-        }
-    }
-
-    &__value {
-        font-size: 28px;
-        font-weight: 600;
-    }
-
-    &__button {
-        padding: 10px 55px;
-    }
+  &__button {
+    padding: 10px 55px;
+  }
 }
 
 @media (max-width: 784px) {
-    .pricing {
-        margin-top: 30px;
+  .pricing {
+    margin-top: 30px;
 
-        &__wrapper {
-            overflow: hidden;
-        }
-
-        &__cards {
-            &-container {
-                overflow: hidden;
-                padding-bottom: 40px;
-            }
-        }
-
-        &__description {
-            text-align: center;
-        }
-
+    &__wrapper {
+      overflow: hidden;
     }
+
+    &__cards {
+      &-container {
+        overflow: hidden;
+        padding-bottom: 40px;
+      }
+    }
+
+    &__description {
+      text-align: center;
+    }
+  }
 }

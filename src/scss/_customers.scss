@@ -2,180 +2,186 @@
 @use "mixins";
 
 .customers {
-    margin-top: 75px;
-    // background: #7ebe9a; // FOR DEBUGGING
+  margin-top: 75px;
+  // background: #7ebe9a; // FOR DEBUGGING
 
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 
-        // background: #be7e7e; // FOR DEBUGGING
-    }
+    // background: #be7e7e; // FOR DEBUGGING
+  }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 360px;
+    font-size: 30px;
+  }
+
+  &__description {
+    margin-top: 16px;
+  }
+
+  &__cards-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__card-slider {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: min(20px, 2vw);
+
+    margin-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 340px;
+    flex-shrink: 0;
+    padding: 20px 20px;
+
+    @include mixins.custom-border-style;
+
+    z-index: 2;
 
     &__title {
-        max-width: 360px;
-        font-size: 30px;
+      font-size: 20px;
     }
 
-    &__description {
-        margin-top: 16px;
+    &-navigation {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: 5px;
+
+      z-index: 1;
     }
 
-    &__cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: min(20px, 2vw);
+    &:hover {
+      border: 1px solid variables.$cl-red;
+      cursor: pointer;
+    }
+  }
 
-        margin-top: 50px;
+  &__top-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: min(28px, 1vw);
+
+    width: 100%;
+  }
+
+  &__feedback {
+    width: 100%;
+  }
+
+  &__photo {
+    max-width: 64px;
+    border-radius: 50%;
+  }
+
+  &__info {
+    max-width: 165px;
+
+    p:nth-child(2) {
+      margin-top: 5px;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600px;
+    white-space: nowrap;
+    color: variables.$cl-gray;
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  &__feedback {
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* число строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  &__carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    &-item {
+      width: 14px;
+      height: 14px;
+      background-color: variables.$cl-gray-ultra-light;
+      border-radius: 20px;
+
+      &:nth-child(1) {
+        width: 58px;
+        background-color: variables.$cl-red;
+      }
     }
 
-    &__cards-container {
-        width: 100%;
-        overflow: hidden;
+    &-dots {
+      display: flex;
+      flex-direction: row;
+      gap: min(45px, 4vw);
     }
-
-    &__card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        max-width: 340px;
-        flex-shrink: 0;
-        padding: 20px 20px;
-
-        @include mixins.custom-border-style;
-
-        &__title {
-            font-size: 20px;
-        }
-
-        &-navigation {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
-            margin-top: 25px;
-        }
-
-        &:hover {
-            border: 1px solid variables.$cl-red;
-            cursor: pointer;
-        }
-    }
-
-    &__top-block {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: min(28px, 1vw);
-
-        width: 100%;
-
-    }
-
-    &__feedback {
-        width: 100%;
-    }
-
-    &__photo {
-        max-width: 64px;
-        border-radius: 50%;
-    }
-
-    &__info {
-        max-width: 165px;
-
-        p:nth-child(2) {
-            margin-top: 5px;
-        }
-    }
-
-    &__name {
-        font-size: 18px;
-        font-weight: 600px;
-        white-space: nowrap;
-        color: variables.$cl-gray;
-    }
-
-    &__rating {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: nowrap;
-        gap: 10px;
-    }
-
-    &__feedback {
-        margin-top: 20px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        /* число строк */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    &__navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        width: 100%;
-        margin-top: 30px;
-
-    }
-
-    &__carousel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-
-        &-item {
-            width: 14px;
-            height: 14px;
-            background-color: variables.$cl-gray-ultra-light;
-            border-radius: 20px;
-
-            &:nth-child(1) {
-                width: 58px;
-                background-color: variables.$cl-red;
-
-            }
-        }
-
-        &-dots {
-            display: flex;
-            flex-direction: row;
-            gap: min(45px, 4vw);
-        }
-    }
+  }
 }
 
 .button--arrow {
-    background-color: transparent;
-    border: 0 solid transparent;
-    padding: 0;
-    margin: 0;
-    padding: 0;
+  background-color: transparent;
+  border: 0 solid transparent;
+  padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 784px) {}
+@media (max-width: 784px) {
+}

@@ -2,69 +2,69 @@
 @use "mixins";
 
 .subscription {
-    &__wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
-        max-width: 100%;
-        margin: 0 auto;
-        margin-top: 70px;
-        padding: 35px 45px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 35px 45px;
 
-        @include mixins.custom-border-style;
-        background-color: variables.$cl-white;
-    }
+    @include mixins.custom-border-style;
+    background-color: variables.$cl-white;
+  }
 
-    &__content {
-        // background-color: lightgreen; // FOR DEBUGGING
+  &__content {
+    // background-color: lightgreen; // FOR DEBUGGING
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 
-        width: 100%;
-    }
+    width: 100%;
+  }
 
-    &__text {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 
-        // max-width: 300px;
-    }
+    // max-width: 300px;
+  }
 
-    &__title {
-        font-size: 25px;
-    }
+  &__title {
+    font-size: 25px;
+  }
 
-    &__description {
-        margin-top: 16px;
-    }
+  &__description {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 784px) {
-    .subscription {
-        &__wrapper {
-            flex-direction: column;
-            align-items: start;
-        }
-
-        &__content {
-            align-items: center;
-            text-align: center;
-        }
-
-        &__description {
-            margin-bottom: 40px;
-        }
-
-        &__button {
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
+  .subscription {
+    &__wrapper {
+      flex-direction: column;
+      align-items: start;
     }
+
+    &__content {
+      align-items: center;
+      text-align: center;
+    }
+
+    &__description {
+      margin-bottom: 40px;
+    }
+
+    &__button {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }

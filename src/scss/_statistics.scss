@@ -2,68 +2,65 @@
 @use "mixins";
 
 .statistics {
-    &__wrapper {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-        max-width: 820px;
-        margin: 0 auto;
-        margin-top: 70px;
-        padding: 35px 45px;
+    max-width: 820px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 35px 45px;
 
-        @include mixins.custom-border-style;
+    @include mixins.custom-border-style;
+  }
+
+  &__card {
+    width: 100px;
+    // background-color: lightgreen; // FOR DEBUGGING
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
+  }
 
-    &__card {
-        width: 100px;
-        // background-color: lightgreen; // FOR DEBUGGING
+  &__content {
+    text-align: center;
+    margin-top: 5px;
+  }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+  &__label {
+    margin-top: 5px;
+  }
 
-        &-text {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-
-        }
-    }
-
-    &__content {
-        text-align: center;
-        margin-top: 5px;
-
-    }
-
-    &__label {
-        margin-top: 5px;
-    }
-
-    &__divider {
-        height: 46px;
-        width: 1px;
-        background-color: variables.$cl-gray-light;
-    }
+  &__divider {
+    height: 46px;
+    width: 1px;
+    background-color: variables.$cl-gray-light;
+  }
 }
 
 @media (max-width: 784px) {
-    .statistics {
-        &__wrapper {
-            margin-top: 30px;
-            padding: 15px 0;
-
-        }
-
-        &__card {
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        &__divider {
-            height: 60px;
-        }
+  .statistics {
+    &__wrapper {
+      margin-top: 30px;
+      padding: 15px 0;
     }
+
+    &__card {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__divider {
+      height: 60px;
+    }
+  }
 }
